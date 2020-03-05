@@ -1,0 +1,15 @@
+name: 'Overwrite docker image tag'
+description: 'Overwrite docker image tag with an image of your preference'
+branding:
+  icon: 'delete'
+  color: 'red'
+inputs:
+  dockerImage:
+    description: 'The full docker image name and tag to be overwritten'
+    required: true
+  overwriteImage:
+    description: 'The docker image to overwrite the docker image with'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
