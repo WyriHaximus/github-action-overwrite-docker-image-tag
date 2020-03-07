@@ -1,5 +1,5 @@
 name: 'Overwrite docker image tag'
-description: 'Overwrite docker image tag with an image of your preference'
+description: 'Overwrite docker image tag on Github Package Registry with an image of your preference'
 branding:
   icon: 'delete'
   color: 'red'
@@ -9,6 +9,9 @@ inputs:
     required: true
   overwriteImage:
     description: 'The docker image to overwrite the docker image with'
+    required: true
+  authenticatingUser:
+    description: 'The user we authenticate as when overwriting the docker image'
     required: true
 runs:
   using: 'docker'
