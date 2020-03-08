@@ -20,5 +20,5 @@ inputs:
     description: 'The URL of the Docker Container Registry'
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'node12'
+  main: 'main.js'
